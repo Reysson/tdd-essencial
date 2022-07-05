@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8925ea5e-ddcd-4497-a6fe-9740ebad19f1" name="Changes" comment="test: add camel case converter">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pedidovenda/ItemPedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pedidovenda/PedidoVenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pedidovendatest/PedidoVendaTest.java" afterDir="false" />
+    <list default="true" id="8925ea5e-ddcd-4497-a6fe-9740ebad19f1" name="Changes" comment="test: add more test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pedidovenda/ResumoPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CamelCaseConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/camelcase/CamelCaseConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CamelCaseConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/camelcasetest/CamelCaseConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pedidovenda/PedidoVenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pedidovenda/PedidoVenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pedidovendatest/PedidoVendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pedidovendatest/PedidoVendaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +72,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PedidoVendaTest.deveAplicarDescontoNa3Faixa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd-essencial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pedidovendatest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pedidovendatest" />
+      <option name="MAIN_CLASS_NAME" value="pedidovendatest.PedidoVendaTest" />
+      <option name="METHOD_NAME" value="deveAplicarDescontoNa3Faixa" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PedidoVendaTest" />
+        <item itemvalue="JUnit.PedidoVendaTest.deveAplicarDescontoNa3Faixa" />
         <item itemvalue="JUnit.CamelCaseConverterTest" />
       </list>
     </recent_temporary>
@@ -132,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656952161993</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test: add more test">
+      <created>1657032294483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657032294483</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +175,7 @@
     <MESSAGE value="feat: add camel case converter" />
     <MESSAGE value="chore: add idea in gitigonre" />
     <MESSAGE value="test: add camel case converter" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: add camel case converter" />
+    <MESSAGE value="test: add more test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: add more test" />
   </component>
 </project>
