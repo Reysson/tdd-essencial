@@ -1,5 +1,6 @@
 package pedidovendatest;
 
+import desconto.*;
 import org.junit.Before;
 import org.junit.Test;
 import pedidovenda.ItemPedido;
@@ -17,7 +18,13 @@ public class PedidoVendaTest {
 
     @Before
     public void setUp() {
-        pedidoVenda = new PedidoVenda();
+        CalculadoraFaixaDesconto calculadoraFaixaDesconto =
+                new CalculadoraDesconto3Faixa(
+                new CalculadoraDesconto2Faixa(
+                new CalculadoraDesconto1Faixa(
+                new SemDesconto(null))));
+
+        pedidoVenda = new PedidoVenda(calculadoraFaixaDesconto);
     }
 
     public void assertResumoPedido(double valorTotal, double desconto) {
@@ -28,7 +35,6 @@ public class PedidoVendaTest {
 
     @Test
     public void devePermitirAdicionarUmItemNoPedido() {
-        PedidoVenda pedidoVenda = new PedidoVenda();
         pedidoVenda.adicionarItem(new ItemPedido("Sabonete", 3.0, 10));
     }
 
