@@ -1,10 +1,8 @@
 package pedidovendatest;
 
-import desconto.*;
 import org.junit.Before;
 import org.junit.Test;
-import pedidovenda.ItemPedido;
-import pedidovenda.PedidoVenda;
+import pedidovenda.QuantidadeItensInvalidaException;
 import pedidovenda.ResumoPedido;
 
 import static org.junit.Assert.assertEquals;
@@ -78,6 +76,11 @@ public class PedidoVendaTest {
                 .comItem(20.0, 20);
 
         assertResumoPedido(1300.0, 104.0);
+    }
+
+    @Test(expected = QuantidadeItensInvalidaException.class)
+    public void naoDeveAceitarPedidosComQuantidadesNegativas() {
+        pedidoBuilder.comItem(0.0, -10);
     }
 
 }
