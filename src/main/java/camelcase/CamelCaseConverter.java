@@ -1,3 +1,5 @@
+package camelcase;
+
 public class CamelCaseConverter {
 
     public String converter(String nome) {
